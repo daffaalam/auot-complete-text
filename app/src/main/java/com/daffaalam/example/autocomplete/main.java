@@ -32,8 +32,8 @@ public class main extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         AutoCompleteTextView nmakt = (AutoCompleteTextView) findViewById(R.id.autotext);
-
-        ArrayAdapter<String> nmkta = new ArrayAdapter<String>(main.this, android.R.layout.simple_list_item_1, nama);
+        ArrayAdapter<String> nmkta;
+        nmkta = new ArrayAdapter<>(main.this, android.R.layout.simple_list_item_1, nama);
 
         nmakt.setThreshold(1);
         nmakt.setAdapter(nmkta);
